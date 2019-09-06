@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hola.hola.util.MySwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipe_reveal_layout"
+    app:dragEdge="right"
+    app:mode="normal">
+
+    <FrameLayout
+        android:id="@+id/swipe_root_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_swipe_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Set PIN"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/dialogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/images" />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/profileImage"
+                android:layout_toLeftOf="@id/profileTimeLastMessage"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_toStartOf="@id/profileTimeLastMessage"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_medium"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Michael Raen"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profileTimeLastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/iv_chat_status"
+                android:layout_toStartOf="@+id/iv_chat_status"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:text="07.10.2018"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_chat_status"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_menu_new_secret_chat"
+                android:tint="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileName"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/profileImage"
+                android:layout_toRightOf="@id/profileImage">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="top"
+                    android:maxLines="2"
+                    android:text="Ipsum dolor sit amet, corrumpit disputationi
+dolor sit amet, corrumpit disputationi"
+                    android:textColor="@color/colorTextChat" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dialogUnreadBubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/profileImage"
+                android:layout_alignLeft="@id/profileImage"
+                android:layout_alignStart="@id/profileImage"
+                android:layout_alignTop="@id/profileImage"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bubble_circle"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1" />
+
+            <FrameLayout
+                android:id="@+id/dialogDividerContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:id="@+id/dialogDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorViewChat" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</com.hola.hola.util.MySwipeRevealLayout>

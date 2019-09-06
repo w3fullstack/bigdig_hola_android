@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b764</color>
+    <color name="colorPrimaryDark">#00a65b</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="etColor">#212121</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorMenuBackground">#eff3f8</color>
+    <color name="colorDialogSeparator">#f6f6f6</color>
+    <color name="colorTextChat">#9c9c9c</color>
+    <color name="colorViewChat">#f1f1f1</color>
+    <color name="colorTextServerMessage">#3b3b3b</color>
+    <color name="colorBgFAB">#3b3b3b</color>
+
+    <color name="colorHint">#aaa</color>
+    <color name="membersViewBackground">#3b3b3b</color>
+    <color name="membersViewItemBackground">#767676</color>
+</resources>

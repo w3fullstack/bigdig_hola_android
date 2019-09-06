@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_group_add"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_new_chat"
+            android:icon="@drawable/ic_menu_new_chat"
+            android:title="@string/menu_new_chat" />
+
+        <item
+            android:id="@+id/nav_new_secret_chat"
+            android:icon="@drawable/ic_menu_new_secret_chat"
+            android:title="@string/menu_new_secret_chat" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_saved_messages"-->
+            <!--android:icon="@drawable/ic_menu_saved_messages"-->
+            <!--android:title="@string/menu_saved_messages" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_local_storage"-->
+            <!--android:icon="@drawable/ic_menu_local_storage"-->
+            <!--android:title="@string/menu_local_storage" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_cloud_storage"-->
+            <!--android:icon="@drawable/ic_menu_cloud_storage"-->
+            <!--android:title="@string/menu_cloud_storage" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_invite_friends"-->
+            <!--android:icon="@drawable/ic_menu_invite_friends"-->
+            <!--android:title="@string/menu_invite_friends" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_calls"-->
+            <!--android:icon="@drawable/ic_menu_calls"-->
+            <!--android:title="@string/menu_calls" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="@string/menu_camera" />-->
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_menu_contacts"
+            android:title="@string/menu_contacts" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

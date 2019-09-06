@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc_dialog">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/holder_keyboard"
+        tools:listitem="@layout/listitem_message_server"
+        android:visibility="gone"/>
+    <FrameLayout
+        android:id="@+id/empty_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/holder_keyboard"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/empty_messages"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/holder_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_count_uploaded_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+        <LinearLayout
+            android:id="@+id/holder_currently_uploading"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <ProgressBar
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:indeterminate="true"/>
+            <TextView
+                android:id="@+id/tv_count_uploading_documents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_attach_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toStartOf="@+id/iv_send"
+                android:layout_toLeftOf="@+id/iv_send"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_attach_image" />
+
+            <EditText
+                android:id="@+id/et_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:layout_toStartOf="@+id/iv_attach_image"
+                android:layout_toLeftOf="@+id/iv_attach_image"
+                android:layout_toEndOf="@+id/iv_attach_file"
+                android:layout_toRightOf="@+id/iv_attach_file"
+                android:background="@null"
+                android:hint="Message" />
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_send"
+                android:paddingEnd="12dp"
+                android:paddingRight="12dp"/>
+
+            <ImageView
+                android:id="@+id/iv_attach_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_attach_file"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/edit_personal_info"
+        android:title="@string/edit_personal_info"
+        app:showAsAction="never"/>
+    <item android:id="@+id/change_avatar"
+        android:title="@string/change_avatar"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/change_password"
+        android:title="@string/change_password"
+        app:showAsAction="never"/>
+
+</menu>

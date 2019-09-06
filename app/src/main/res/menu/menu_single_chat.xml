@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/translateEnabled"
+        android:title="Translate Messages"
+        app:showAsAction="never"
+        android:checkable="true"
+        android:checked="true"/>
+    <item android:id="@+id/menu_item_change_admin"
+        app:showAsAction="never"
+        android:title="Change chat admin"/>
+    <item android:id="@+id/menu_item_delete_user"
+        app:showAsAction="never"
+        android:title="Delete user"/>
+    <item android:id="@+id/menu_item_change_picture"
+        app:showAsAction="never"
+        android:title="Add profile pic"/>
+</menu>

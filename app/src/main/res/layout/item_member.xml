@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_member_item_size"
+
+    android:background="@drawable/bg_member_item"
+    android:orientation="horizontal"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="8dp"
+    android:layout_margin="4dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical">
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_member_item_size"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/profileImage"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="TOXA 777"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/dimen_member_item_size"
+        android:layout_height="@dimen/dimen_member_item_size"
+        android:layout_gravity="center|center_vertical"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_account_circle_black_24dp"/>
+
+</RelativeLayout>
